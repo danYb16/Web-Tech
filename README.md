@@ -2,9 +2,9 @@
 
 ## 1. Ce este o resursa?
 
-O resursa este o entitate accesibila printr-un URI, de exemplu o tema, un utilizator sau un produs.
+O resursa este o entitate accesibila printr-un URI, de exemplu o tema, o imagine sau un produs.
 
-In aplicatia mea, o resursa poate fi o tema accesata printr-un URL precum /teme/1.
+In aplicatia mea, o resursa poate fi o imagine accesata prin /assets/imagine.png .
 
 ---
 
