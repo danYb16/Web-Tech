@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Campus Info Hub</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-row">
+			<a class="brand" href="index.html">
+				<img src="assets/logo.png" alt="Campus Info Hub logo" class="brand-logo" />
+				<span>Campus Info Hub</span>
+			</a>
+			<button class="menu-toggle" aria-label="Meniu" aria-controls="primary-nav" aria-expanded="false">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<nav id="primary-nav" class="nav-links">
+				<a href="index.html">Home</a>
+				<a href="pages/library.html">Biblioteca</a>
+				<a href="pages/cafeteria.html">Cantina</a>
+				<a href="pages/events.html">Evenimente</a>
+				<a href="https://www.uab.ro/" target="_blank" rel="noopener noreferrer">Site oficial UAB</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="hero">
+			<h2>Informatii utile pentru viata de campus</h2>
+			<p>Un site simplu unde gasești rapid informatii despre biblioteca, cantina si evenimente.</p>
+		</section>
+
+		<section class="card">
+			<h2>Resurse campus (din JSON)</h2>
+			<p>Datele de mai jos sunt incarcate dinamic din <strong>data/resources.json</strong>.</p>
+			<ul id="resource-list"></ul>
+		</section>
+
+		<section class="card">
+			<h2>Filtrare in timp real</h2>
+			<label for="filter-input">Cauta dupa nume, tip, locatie, program sau tag</label>
+			<input id="filter-input" type="text" placeholder="Ex: studiu, biblioteca, Aula Mica" />
+			<ul id="filtered-list"></ul>
+		</section>
+
+		<section class="card">
+			<h2>Tag-uri / categorii</h2>
+			<div id="tag-list"></div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>© 2026 Campus Info Hub</p>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
